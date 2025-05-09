@@ -1,5 +1,4 @@
 
-// Problem 1
 
 function formatString(input: string, toUpper?: boolean): string{
     if(toUpper === false){
@@ -14,7 +13,7 @@ function formatString(input: string, toUpper?: boolean): string{
 formatString("Hello",false)
 
 
-// Problem 2
+
 
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[]{
     const filterting = items.filter((item)=> item.rating >=4)
@@ -32,7 +31,7 @@ const books = [
   
   filterByRating(books); 
 
-  // Problem 3
+
 
   function concatenateArrays<T>(...arrays: T[][]): T[]{
     const concat = arrays.flat()
@@ -47,7 +46,7 @@ concatenateArrays<string>(["a", "b"], ["c"]);
 concatenateArrays<number>([1, 2], [3, 4], [5]); 
  
 
-// Problem 4
+
 
 class Vehicle{
     private make: string;
@@ -84,7 +83,7 @@ mycar.getInfo()
 mycar.getModel()
 
 
-// Problem 5
+
 
 function processValue(value: string | number): number {
     if(typeof value === "string"){
@@ -103,7 +102,7 @@ processValue("hello");
 processValue(20);      
 
 
-// Problem 6
+
 
 interface Product {
     name: string;
@@ -128,7 +127,7 @@ interface Product {
   
   getMostExpensiveProduct(products); 
 
-  // problem 7
+
 
   enum Day {
     Monday,
@@ -156,7 +155,7 @@ getDayType(Day.Monday);
 getDayType(Day.Sunday);  
 
 
-// Problem 8
+
 
 async function squareAsync(n: number): Promise<number>{
     return new Promise<number>((resolve, reject)=>{
